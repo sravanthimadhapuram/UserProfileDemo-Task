@@ -1,6 +1,5 @@
-package com.velmurugan.userprofileinfo
+package com.demo.userprofileinfo
 
-import com.demo.userprofileinfo.RetrofitService
 import com.google.gson.Gson
 import junit.framework.Assert.assertEquals
 import kotlinx.coroutines.runBlocking
@@ -32,7 +31,7 @@ class RetrofitServiceTest {
 
 
     @Test
-    fun `get all movie api test`() {
+    fun `get all user api test`() {
         runBlocking {
              val mockResponse = MockResponse()
             mockWebServer.enqueue(mockResponse.setBody("[]"))

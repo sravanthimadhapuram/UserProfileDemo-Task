@@ -8,15 +8,11 @@ import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.runtime.Composable
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavHostController
-import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.navArgument
 import com.demo.userprofileinfo.*
 import com.demo.userprofileinfo.theme.JetpackcomposeTheme
-import com.demo.userprofileinfo.ui.screens.AlbumListScreen
-import com.demo.userprofileinfo.ui.screens.PhotoListScreen
 import com.demo.userprofileinfo.ui.screens.ProfileListScreen
 
 class MainActivity : ComponentActivity() {

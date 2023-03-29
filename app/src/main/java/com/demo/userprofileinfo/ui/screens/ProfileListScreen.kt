@@ -27,7 +27,6 @@ import androidx.navigation.NavHostController
 import com.demo.userprofileinfo.R
 import com.demo.userprofileinfo.User
 import com.demo.userprofileinfo.ui.AlbumsListActivity
-import com.demo.userprofileinfo.ui.MainActivity
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable

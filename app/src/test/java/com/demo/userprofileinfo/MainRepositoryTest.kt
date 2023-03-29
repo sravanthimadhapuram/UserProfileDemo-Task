@@ -1,8 +1,6 @@
-package com.velmurugan.userprofileinfo
+package com.demo.userprofileinfo
 
-import com.demo.userprofileinfo.MainRepository
-import com.demo.userprofileinfo.RetrofitService
-import com.demo.userprofileinfo.User
+
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
 import org.junit.Before
@@ -29,7 +27,7 @@ class MainRepositoryTest {
     }
 
     @Test
-    fun `get all movie test`() {
+    fun `get all user test`() {
         runBlocking {
             Mockito.`when`(apiService.getUsers()).thenReturn(Response.success(listOf<User>()))
             val response = mainRepository.getUsers()

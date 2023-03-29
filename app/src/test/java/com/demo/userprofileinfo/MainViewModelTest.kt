@@ -1,4 +1,4 @@
-package com.velmurugan.userprofileinfo
+package com.demo.userprofileinfo
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.demo.userprofileinfo.*
@@ -44,7 +44,7 @@ class MainViewModelTest {
     }
 
     @Test
-    fun getAllMoviesTest() {
+    fun getAllUsersTest() {
         runBlocking {
             Mockito.`when`(mainRepository.getUsers())
                 .thenReturn(NetworkState.Success(listOf<User>(User(1, "", "new"))))
@@ -56,7 +56,7 @@ class MainViewModelTest {
 
 
     @Test
-    fun `empty movie list test`() {
+    fun `empty user list test`() {
         runBlocking {
             Mockito.`when`(mainRepository.getUsers())
                 .thenReturn(NetworkState.Success(listOf<User>()))
